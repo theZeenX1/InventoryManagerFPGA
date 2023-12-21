@@ -1,27 +1,55 @@
 # InventoryManagerFPGA
-APR-2023 FPGA Project
-TEAM:
-Harshith Ranga 21ECB0A47
-Vikram Dev 21ECB0A48
-Rohan Gunjal 21ECB0A49
-Somil Maldhani 21ECB0A72
-##################################
-Aim: To implement Inventory Management system using FPGA Artix – 7 4DDR and perform necessary operations to display working of the project.
-##################################
-Project Details:
-This project uses direct hardware interference to address the challenges of space management and classification. During the current economic expansion, both the quantity and scale of new commercial warehouses have increased dramatically; e-commerce, or online shopping, has been a driving factor of this upsurge. Every quarter, more and larger inventories are put up, and as a result,
-their administration has become an important aspect of the planning for these warehouses. Using Verilog, A quicker and more effective way to organise the inventory is guaranteed. The FPGA will be a low-cost, less power-hungry storage organiser alternative to software, making it a competitive product in the market.
-Considering the fact that administration of the warehouses is crucial, we
-have implemented simple yet efficient methodologies for better outcomes and sustainable development. Three levels of abstraction have been used while developing. The project first encounters a password checking module, followed with product ID encoder and then Location Finder with displaying the count of the units of a unique product ID.
-To maintain the integrity of the warehouse management system, security
-must be unbreakable. Hence, any user must verify their identify with 8 Bit long decimal number password. On the account of failure after trying thrice, the respective authorities are alarmed and unless a Master Password is entered and verified, management system is not granted access.
-To avail a unique product its designated location, its product ID is
-entered into the module and its respective floor is allotted based on its priority and followed by its section, sub section and shelf. These operations are performed in the Product ID Encoder Module.
-After the location of the product is accessed, one can start adding or
-subtracting items based on the number of orders. Since priority is given to certain items these items are added and removed from the shelfs primarily and then algorithm is continued for the other products. After updating the current values of the quantity of the products, these are displayed on the console and both the underflowing and overflowing cases are also defined for extreme
-cases. These operations are dealt in Location Finder, Display Modules.
-According to the warehouse parameters, the warehouse essentially contains three floors with the bottom most floor given more priority for removal or addition of items for easier access. In each floor there are 5 Sections which are further into 5 Sub Sections. In each of the 5 Sub Sections, there are 5 Shelfs and, in each shelf, it has 5 containers. Hence, a shelf can withhold a total of 75 units of a unique product.
-By these calculations, the full capacity of the warehouse is to store 125
-Unique Products and 9375 total units of all the products. Considering the quantity of the number of products, warehouse
-operations can be performed on huge scale. Addition or Subtraction of the products from their respective locations needs to be undergone smoothly with
-less power consuming tactics for a sustainable development.
+
+**APR-2023 FPGA Project**
+
+## Team
+- Harshith Ranga 21ECB0A47
+- Vikram Dev 21ECB0A48
+- Rohan Gunjal 21ECB0A49
+- Somil Maldhani 21ECB0A72
+
+---
+
+## Aim
+To implement an Inventory Management system using FPGA Artix-7 4DDR and perform necessary operations to display the working of the project.
+
+---
+
+## Project Details
+This FPGA project addresses the challenges of space management and classification in warehouses through direct hardware interference. The goal is to create an efficient inventory management system using Verilog on the FPGA Artix-7 4DDR. The project aims to provide a cost-effective, low-power alternative to traditional software solutions, making it a competitive product in the market.
+
+During the current economic expansion, the demand for larger commercial warehouses has increased, driven by the growth of e-commerce. As a result, efficient inventory administration has become crucial for these warehouses. The project employs three levels of abstraction to organize inventory effectively.
+
+1. **Password Checking Module:**
+   - Users must verify their identity with an 8-bit long decimal number password.
+   - After three failed attempts, the system alerts the authorities.
+   - Access to the management system is granted only after entering and verifying a Master Password.
+
+2. **Product ID Encoder:**
+   - Allocates a designated location to a unique product based on its priority.
+   - Utilizes floor, section, subsection, and shelf for efficient storage.
+
+3. **Location Finder, Display Modules:**
+   - Adds or subtracts items based on the number of orders.
+   - Prioritizes certain items for efficient shelf management.
+   - Updates product quantities, displaying them on the console.
+   - Defines underflowing and overflowing cases for extreme scenarios.
+
+### Warehouse Configuration
+- Three floors, with the bottommost floor given more priority.
+- Each floor contains 5 sections, each further divided into 5 subsections.
+- In each of the 5 subsections, there are 5 shelves, and each shelf has 5 containers.
+- Each shelf can hold a total of 75 units of a unique product.
+
+### Warehouse Capacity
+- Stores 125 unique products.
+- Total capacity for all products: 9375 units.
+
+### Sustainability Focus
+- Emphasizes smooth and power-efficient addition or subtraction of products.
+- Designed for sustainable development with minimal power consumption.
+
+---
+
+## Conclusion
+The Inventory Manager FPGA project provides an innovative solution for warehouse management, leveraging the power of FPGA technology. Its efficient methodologies ensure the seamless organization and administration of inventories, addressing the challenges posed by the ever-expanding commercial warehousing sector.
